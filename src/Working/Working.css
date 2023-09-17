@@ -1,0 +1,200 @@
+.working-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 50px;
+  }
+  .working-container1{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 45px;
+  }
+  .img-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 25px 0; */
+  }
+
+  .working-content1{
+
+    font-size: 52px;
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-weight: bolder;
+    color: #fc7171;
+  }
+
+  .working-content2{
+    font-size: 42px;
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+
+  }
+
+
+ 
+  
+  .car-img {
+    width: 60%; /* Set the width of the image as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  .img-content ol {
+    margin-left: 60px;
+    list-style: none; /* Remove default list bullets */
+    padding-top: 12px;
+    padding: 0; /* Remove default padding */
+    counter-reset: item-counter; /* Initialize the counter */
+  }
+  
+  .img-content li {
+    
+    position: relative;
+    margin-bottom: 10px; /* Add margin between list items as needed */
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 75px;
+    padding-top: 0;
+  }
+  
+  .img-content li::before {
+    content: counter(item-counter); /* Display the counter value */
+    counter-increment: item-counter; /* Increment the counter */
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 45px; /* Adjust the circle size as needed */
+    height: 45px; /* Adjust the circle size as needed */
+    background-color: #fc7171; /* Set the background color to red */
+    border-radius: 50%; /* Create a circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white; /* Set the text color to white */
+  }
+
+  .working-bottom{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    /* margin-bottom: 10px; */
+   
+  }
+
+  .working-bottom img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .working-bottom-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .working-bottom-content1{
+   
+    font-size: 48px;
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-weight: bolder;
+  }
+  .working-bottom-content2{
+    font-size: 22px;
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .img-content {
+      
+      flex-direction: column;
+      
+    }
+
+    .working-content1{
+
+      font-size: 32px;
+      
+    }
+    .working-content2{
+
+      font-size: 22px;
+      
+    }
+    .img-content li {
+    
+      
+      font-size: 25px;
+      
+    }
+    .img-content li::before {
+      width: 30px;
+      height: 30px;
+    }
+    .working-bottom-content1{
+      font-size: 28px;
+
+    }
+    .working-bottom-content2{
+      font-size: 12px;
+
+    }
+    .working-bottom img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+
+  }
+
+  @media screen and (max-width: 540px) {
+
+    .working-content1{
+
+      font-size: 20px;
+      font-weight: 700;
+      
+    }
+    .working-content2{
+
+      font-size: 14px;
+      
+    }
+    .img-content li {
+    
+      
+      font-size: 15px;
+      
+    }
+    .img-content li::before {
+      width: 30px;
+      height: 30px;
+    }
+    .working-bottom-content1{
+      font-size: 28px;
+
+    }
+    .working-bottom-content2{
+      font-size: 12px;
+
+    }
+    .working-bottom img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+
+  }

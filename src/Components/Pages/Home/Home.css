@@ -1,0 +1,111 @@
+/* .instructor{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(57, 56, 56);
+    display: flex;
+    
+    justify-content: center;
+}
+
+.instructor h1 {
+    color: white;
+    font-size: 48px;
+    font-family: Gill Sans Extrabold, sans-serif;
+}
+
+.cards-container {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: row;
+} */
+
+.instructor {
+  /* Assuming you want to center the content vertically and horizontally */
+  display: flex;
+  /* background-color: black; */
+  background-image: url("/public/background.png");
+  background-size: cover;
+
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  /* height: auto; Adjust the height as needed to fill the viewport */
+  padding-bottom: 50px;
+}
+
+.instructor h1 {
+  color: white;
+  color: white;
+  font-size: 42px;
+  font-family: Gill Sans Extrabold, sans-serif;
+}
+
+.centered-text {
+  text-align: center; /* Center the text within the <h1> element */
+}
+
+.cards-container {
+  /* Flex container for cards */
+  margin: 0 52px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards horizontally within the container */
+  gap: 60px; /* Adjust the gap between cards as needed */
+  /* Optional: If you want to limit the width of the card row, you can add a max-width property */
+  /* max-width: 800px; Adjust the max-width as needed */
+  /* overflow-x: auto; Add horizontal scrolling if the cards exceed the container width */
+}
+
+/* Add any additional styles you need for the cards here */
+.container-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.text-box {
+  display: flex;
+  padding-left: 12px;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.span1 {
+  color: rgb(244, 61, 61);
+}
+
+.box img {
+  width: 65px;
+  height: 65px;
+}
+
+@media screen and (max-width: 760px) {
+  /* .container-bottom{
+        flex-direction: column;
+        /* align-items: center; 
+        
+    } */
+  .box {
+    margin-top: 12px;
+    width: 90%;
+    position: relative;
+  }
+  .instructor h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .instructor h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,27 @@
+.facility-card{
+    width: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 12px;
+}
+
+.facility-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.facility-card span {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+    .facility-card{
+        width: 100%;
+    }
+
+}

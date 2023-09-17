@@ -1,0 +1,85 @@
+/* Accordion Container */
+.accordion {
+    border: none;
+    border-radius: 2px;
+}
+
+/* Accordion Item */
+.accordion__item + .accordion__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Button */
+.accordion__button {
+    background-color: rgb(214, 214, 214);;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 700px;
+    text-align: left;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.1);;
+    position: relative;
+}
+
+/* Accordion Button Hover */
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+/* Accordion Plus/Minus Icon */
+.accordion__button::after {
+    content: '+'; /* Plus sign as default */
+    position: absolute;
+    right: 20px; /* Adjust the right distance as needed */
+    top: 50%; /* Vertically center the plus sign */
+    transform: translateY(-50%); /* Center the plus sign vertically */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Accordion Minus Icon when Expanded */
+.accordion__button[aria-expanded='true']::after,
+.accordion__button[aria-selected='true']::after {
+    content: '-'; /* Change to a minus sign when expanded */
+}
+
+/* Ensure the text remains on the left side of the button */
+.accordion__button span {
+    margin-right: 30px; /* Adjust the right margin as needed */
+}
+
+/* Accordion Panel */
+.accordion__panel {
+    padding: 20px;
+    width: 700px;
+    animation: fadein 0.35s ease-in;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .accordion__button{
+        width: 90%;
+    }
+    .accordion__panel {
+        padding: 20px;
+        width: 100%;
+        animation: fadein 0.35s ease-in;
+    }
+    
+
+}
+
+
+
+/* Fade-in Animation */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

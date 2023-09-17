@@ -1,0 +1,48 @@
+.blog-card{
+    width: 280px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    cursor: pointer;
+    
+}
+.blog-container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.blog-container2{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+}
+.vertical-header {
+    display: flex;
+    align-items: center; /* Vertically center the text */
+  }
+  .blog-text{
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 20px;
+  }
+  
+  .vertical-text {
+    transform: rotate(-180deg); /* Rotate text 90 degrees anti-clockwise */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 24px; /* Adjust the font size as needed */
+    background-color: white; /* Background color */
+    font-weight: 500;
+    color: black; /* Text color */
+    writing-mode: vertical-rl; /* Adjust text orientation for browsers that support it */
+    padding: 0;
+  }
+
+  @media screen and (max-width: 1100px) {
+
+  }
+  
+  
